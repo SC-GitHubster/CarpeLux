@@ -7,15 +7,24 @@ class CarsController < ApplicationController
   end
 
   def show
-    @car = Car
   end
 
   def new
-    @car = curren_user.cars.build
+    @car = current_user.cars.build
   end
 
   def create
-    @car = curren_user.cars.build(car_params)
+    @car = current_user.cars.build(car_params)
+    if @car.save
+      redirect_to @car, notice: "Car was successfully added."
+    else
+      render :new
+    end
+  end
+
+  def destroy
+    @car.destroy
+    redirect_to cars_url, notice: "Car was successfully deleted."
   end
 
   def update
@@ -26,7 +35,13 @@ class CarsController < ApplicationController
     @car = Car
   end
 
-  def destroy
-    @car = Car
+  private
+
+  def set_car
+    @car = Car.find(params[:id])
+  end
+
+  def car_params
+    params.require(:car).permit(:name, :description, :price, :user_id)
   end
 end
