@@ -1,0 +1,10 @@
+<h1>Booking Details</h1>
+
+<p><strong>Start Date:</strong> <%= @booking.start_date %></p>
+<p><strong>End Date:</strong> <%= @booking.end_date %></p>
+<p><strong>Status:</strong> <%= @booking.status %></p>
+
+<%= link_to 'Edit', edit_booking_path(@booking) %> |
+<%= link_to 'Delete', booking_path(@booking), method: :delete, data: { confirm: 'Are you sure?' } %> |
+<%= link_to 'Back to Bookings', bookings_path %> |
+<%= link_to 'Back to Cars', cars_path %>
