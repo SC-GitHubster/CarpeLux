@@ -1,0 +1,23 @@
+<h1>Edit Car</h1>
+
+<%= form_with(model: @car, local: true) do |form| %>
+  <%= form.label :make %>
+  <%= form.text_field :make %>
+
+  <%= form.label :model %>
+  <%= form.text_field :model %>
+
+  <%= form.label :year %>
+  <%= form.number_field :year %>
+
+  <%= form.label :description %>
+  <%= form.text_area :description %>
+
+  <%= form.label :image_url %>
+  <%= form.text_field :image_url %>
+
+  <%= form.submit "Update Car" %>
+<% end %>
+
+<%= link_to 'Show', car_path(@car) %> |
+<%= link_to 'Back', cars_path %>
