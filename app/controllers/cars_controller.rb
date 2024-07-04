@@ -11,11 +11,11 @@ class CarsController < ApplicationController
   end
 
   def new
-    @car = Car
+    @car = curren_user.cars.build
   end
 
   def create
-    @car = Car
+    @car = curren_user.cars.build(car_params)
   end
 
   def update
