@@ -9,8 +9,27 @@
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
   </head>
-
   <body>
+    <header>
+        <div class=“container”>
+              <nav class="navbar">
+              <div class=“logo”>
+                  <h1>Exotic Cars Express</h1>
+              </div>
+                <ul class="nav-list">
+                    <li><a href=“#”>Lend your car</a></li>
+                    <li><a href=“#”>Home</a></li>
+                    <li><a href=“#”>Cars</a></li>
+                    <li><a href=“#”>Reviews</a></li>
+                    <li><a href=“#”>Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+  <div class="container">
     <%= yield %>
+  <div>
+
   </body>
 </html>

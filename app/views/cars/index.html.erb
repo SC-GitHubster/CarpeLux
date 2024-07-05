@@ -1,11 +1,18 @@
-<h1>All Cars</h1>
+<!-- app/views/cars/index.html.erb -->
+<h1>Cars Listing</h1>
 
-<ul>
+<div class="car-container">
   <% @cars.each do |car| %>
-    <li>
-      <%= link_to "#{car.make} #{car.model}", car_path(car) %>
-    </li>
+    <div class="car">
+      <h3><%= car.make %> <%= car.model %></h3>
+      <p>Price: <%= number_to_currency(car.price) %></p>
+      <% if car.image_url.present? %>
+        <%= image_tag car.image_url, alt: "#{car.make} #{car.model}" %>
+      <% else %>
+        <p>No image found</p>
+      <% end %>
+    </div>
   <% end %>
-</ul>
+</div>
 
 <%= link_to 'New Car', new_car_path %>

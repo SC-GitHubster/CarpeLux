@@ -28,11 +28,14 @@ class CarsController < ApplicationController
   end
 
   def update
-    @car = Car
+    if @car.update(car_params)
+      redirect_to @car, notice: "Car was successfully updated."
+    else
+      render :edit
+    end
   end
 
   def edit
-    @car = Car
   end
 
   private

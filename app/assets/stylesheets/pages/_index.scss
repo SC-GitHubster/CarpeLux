@@ -1,2 +1,58 @@
-// Import page-specific CSS files here.
 @import "home";
+
+.car-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.car {
+  flex: 0 0 calc(33.333% - 20px); /* 3 items per row, with space between */
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  padding: 10px;
+  background-color: #f9f9f9;
+}
+
+.car img {
+  max-width: 100%;
+  height: auto;
+}
+
+.car h2 {
+  margin-top: 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: #333;
+  padding: 1em;
+
+  a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5em 1em;
+  }
+
+  h1 {
+    color: #fff;
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+
+  a:hover {
+    background-color: #575757;
+  }
+
+  .nav-list {
+    list-style-type: none;
+    display: flex;
+    margin-left: auto;
+  }
+
+  .nav-list li {
+    margin-right: 10px;
+  }
+}
