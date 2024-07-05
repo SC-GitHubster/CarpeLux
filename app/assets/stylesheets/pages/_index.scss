@@ -1,2 +1,54 @@
 // Import page-specific CSS files here.
 @import "home";
+
+// ul {
+//   margin: 0;
+//   padding: 0;
+//   list-style-type: none;
+//   background-color: f1f1f1;
+//   width: 200px;
+//   display: inline;
+// }
+
+// li a {
+//   display: inline;
+//   width: 60px;
+//   background-color: #dddddd;
+// }
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: #333;
+  padding: 1em;
+  // position: sticky;
+  // align-items: center
+
+
+  a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5em 1em;
+  }
+
+  h1 {
+    color: rgb(255, 255, 255);
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+
+    a:hover {
+      background-color: #575757;
+    }
+
+    .nav-list {
+      list-style-type: none;
+      display: flex;
+      margin-left: auto;
+    }
+
+    .nav-list li {
+      margin-right: 10px;
+      // padding-left: 60px;
+  }
+
+}
