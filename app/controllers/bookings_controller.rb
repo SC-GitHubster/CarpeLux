@@ -14,18 +14,20 @@ class BookingsController < ApplicationController
 
   # GET /cars/:car_id/bookings/new
   def new
-    @booking = @car.bookings.build
+    @booking = Booking.new
   end
 
   # POST /cars/:car_id/bookings
-  def create
-    @booking = @car.bookings.build(booking_params)
-    @booking.user = current_user
 
+
+  def create
+    @booking = Booking.new(booking_params)
+    @booking.car = @car
+    @booking.user = current_user
     if @booking.save
       redirect_to @booking, notice: 'Booking was successfully created.'
     else
-      render :new
+      render :new, status: :unprocessable_entity
     end
   end
 

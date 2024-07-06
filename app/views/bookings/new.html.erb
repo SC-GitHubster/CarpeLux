@@ -1,15 +1,7 @@
 <h1>New Booking</h1>
 
-<%= form_with(model: @booking, local: true) do |form| %>
-  <%= form.label :start_date %>
-  <%= form.date_field :start_date %>
-
-  <%= form.label :end_date %>
-  <%= form.date_field :end_date %>
-
-  <%= form.submit "Create Booking" %>
+<%= simple_form_for [@car, @booking, ] do |f| %>
+  <%= f.input :start_date, as: :date, html5: true %>
+  <%= f.input :end_date, as: :date, html5: true%>
+  <%= f.submit "Submit booking", class: "btn btn-primary" %>
 <% end %>
-
-<%= link_to 'Back', bookings_path %>
-<%= link_to 'Back to Cars', cars_path %>
-
