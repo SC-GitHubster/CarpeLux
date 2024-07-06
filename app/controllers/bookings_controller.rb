@@ -19,7 +19,7 @@ class BookingsController < ApplicationController
     @booking.car = @car
     @booking.user = current_user
     if @booking.save
-      redirect_to @booking, notice: 'Booking was successfully created.'
+      redirect_to confirmation_booking_path(@booking), notice: 'Booking was successfully created.'
     else
       render :new, status: :unprocessable_entity
     end
@@ -30,7 +30,8 @@ class BookingsController < ApplicationController
     redirect_to bookings_url, notice: 'Booking was successfully destroyed.'
   end
 
-  def confirmation; end
+  def confirmation
+  end
 
   private
 
