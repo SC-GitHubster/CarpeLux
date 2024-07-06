@@ -2,8 +2,10 @@
 
 <p><strong>Year:</strong> <%= @car.year %></p>
 <p><strong>Description:</strong> <%= @car.description %></p>
+<div class="car">
 <%= image_tag(@car.image_url) if @car.image_url.present? %>
+</div>
 
 <%= link_to 'Book this Car', new_car_booking_path(@car) %> |
-<%= link_to 'Edit', edit_car_path(@car) %> |
+<%= link_to 'Edit', edit_car_path(@car) %>  |
 <%= link_to 'Back', cars_path %>
