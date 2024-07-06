@@ -1,39 +1,36 @@
 class BookingsController < ApplicationController
   before_action :authenticate_user!
-  before_action :set_booking, only: [:show, :destroy]
+  before_action :set_booking, only: [:show, :destroy, :confirmation]
   before_action :set_car, only: [:new, :create]
 
-  # GET /bookings
   def index
     @bookings = current_user.bookings
   end
 
-  # GET /bookings/:id
   def show
   end
 
-  # GET /cars/:car_id/bookings/new
   def new
-    @booking = @car.bookings.build
+    @booking = Booking.new
   end
 
-  # POST /cars/:car_id/bookings
   def create
-    @booking = @car.bookings.build(booking_params)
+    @booking = Booking.new(booking_params)
+    @booking.car = @car
     @booking.user = current_user
-
     if @booking.save
       redirect_to @booking, notice: 'Booking was successfully created.'
     else
-      render :new
+      render :new, status: :unprocessable_entity
     end
   end
 
-  # DELETE /bookings/:id
   def destroy
     @booking.destroy
     redirect_to bookings_url, notice: 'Booking was successfully destroyed.'
   end
+
+  def confirmation; end
 
   private
 

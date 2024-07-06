@@ -4,7 +4,6 @@
   <% @cars.each do |car| %>
     <div class="car">
       <h3><%= car.make %> <%= car.model %></h3>
-      <p>Price: <%= number_to_currency(car.price) %></p>
       <%= link_to car_path(car) do %>
         <% if car.image_url.present? %>
           <%= image_tag car.image_url, alt: "#{car.make} #{car.model}" %>
