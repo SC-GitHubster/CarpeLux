@@ -32,6 +32,7 @@ gem "jbuilder"
 gem 'devise'
 
 gem 'cloudinary'
+
 gem 'carrierwave', '~> 2.0'
 gem "dotenv-rails"
 
