@@ -1,4 +1,3 @@
-// Specific CSS for your home-page
 body {
   font-family: 'Arial', sans-serif;
   margin: 0;
@@ -40,20 +39,33 @@ nav ul li a {
   font-weight: bold;
 }
 
-.hero {
-  background-image: url('hero.jpg');
+.hero-background {
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  background-image: url('/assets/hero_background.jpg');
   background-size: cover;
   background-position: center;
-  color: white;
-  text-align: center;
-  padding: 5em 0;
+  background-repeat: no-repeat;
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero {
+  background: rgba(0, 0, 0, 0.7);
+//   padding: 2em;
+//   border-radius: 10px;
 }
 
 .hero-content {
-  border: 5px solid rgb(254, 252, 252);
-  background: rgba(100, 57, 57, 0.5);
+  border: 2px solid rgb(254, 252, 252);
+  background: rgba(31, 30, 30, 0.5);
   display: inline-block;
   padding: 2em;
+  color: white;
+  text-align: center;
 }
 
 .hero h2 {
@@ -119,7 +131,7 @@ footer {
 }
 
 .car {
-  flex: 0 0 calc(33.333% - 20px); /* 3 items per row, with space between */
+  flex: 0 0 calc(33.333% - 20px);
   box-sizing: border-box;
   border: 1px solid #ccc;
   padding: 10px;
@@ -137,33 +149,45 @@ footer {
 
 .navbar {
   display: flex;
+  align-items: center;
   justify-content: space-between;
   background-color: #333;
   padding: 1em;
+}
 
-  a {
-    color: white;
-    text-decoration: none;
-    padding: 0.5em 1em;
-  }
+.logo {
+  display: flex;
+  align-items: center;
+}
 
-  h1 {
-    color: #fff;
-    font-size: 1.5em;
-    font-weight: bold;
-  }
+.logo-img {
+  max-height: 100px;
+  height: auto;
+  width: auto;
+}
 
-  a:hover {
-    background-color: #575757;
-  }
+.navbar a {
+  color: white;
+  text-decoration: none;
+  padding: 0.5em 1em;
+}
 
-  .nav-list {
-    list-style-type: none;
-    display: flex;
-    margin-left: auto;
-  }
+.navbar h1 {
+  color: #fff;
+  font-size: 1.5em;
+  font-weight: bold;
+}
 
-  .nav-list li {
-    margin-right: 10px;
-  }
+.navbar a:hover {
+  background-color: #575757;
+}
+
+.nav-list {
+  list-style-type: none;
+  display: flex;
+  margin-left: auto;
+}
+
+.nav-list li {
+  margin-right: 10px;
 }
