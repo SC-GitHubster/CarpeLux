@@ -1,3 +1,4 @@
+include ActionView::Helpers::AssetUrlHelper
 # This file should ensure the existence of records required to run the application in every environment (production,
 # development, test). The code here should be idempotent so that it can be executed at any point in every environment.
 # The data can then be loaded with the bin/rails db:seed command (or created alongside the database with db:setup).
@@ -7,12 +8,126 @@
 #   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
+def asset_path(file)
+  ActionController::Base.helpers.asset_path(file)
+end
+
+# Destroy all records in the correct order
+Booking.destroy_all
+Car.destroy_all
 User.destroy_all
 
 5.times do |i|
   User.create!(username: "user_#{i}", email: "user_#{i}@email.com", password: "user_#{i}")
 end
 
-Car.create!(make: "Toyota", model: "Corolla", year: 2021, description: "A reliable sedan.", image_url: "https://www.usnews.com/object/image/0000018c-5f0b-dc6c-aded-ffbf2d960000/https-cars-dms-usnews-com-static-uploads-images-auto-custom-15294-original-2024-toyota-corolla-angular-front-1.jpg?update-time=1693333947000&size=responsive640", user: User.all.sample)
-
-Car.create!(make: "Lexus", model: "ES", year: 2022, description: "A midsize luxury sedan with a smooth ride.", image_url: "https://mag.lexus.co.uk/wp-content/uploads/sites/3/2021/03/Lexus-ES-300-fourth-05-696x416-1.jpg", user: User.all.sample)
+Car.create([
+  {
+    model: 'Model S',
+    make: 'Tesla',
+    description: 'A luxury electric car with impressive acceleration and high-tech features.',
+    year: 2020,
+    image_url: '/assets/tesla/Tesla S/tesla3.jpg',
+    user_id: User.first.id,
+    price_per_day: 150.00
+  },
+  {
+    model: '911 Turbo',
+    make: 'Porsche',
+    description: 'A high-performance sports car with a distinctive design and powerful engine.',
+    year: 2019,
+    image_url: '/assets/turbo/turbo/turbo1.jpg',
+    user_id: User.second.id,
+    price_per_day: 200.00
+  },
+  {
+    model: 'Aventador',
+    make: 'Lamborghini',
+    description: 'A supercar known for its bold design and breathtaking speed.',
+    year: 2021,
+    image_url: 'lambo1/lambo4.jpg',
+    user_id: User.third.id,
+    price_per_day: 350.00
+  },
+  {
+    model: 'Ghost',
+    make: 'Rolls-Royce',
+    description: 'A luxurious sedan offering unparalleled comfort and refinement.',
+    year: 2020,
+    image_url: '/assets/rr_ghost1/ghost1.webp',
+    user_id: User.first.id,
+    price_per_day: 400.00
+  },
+  {
+    model: 'Chiron',
+    make: 'Bugatti',
+    description: 'An iconic supercar with an extraordinary top speed and stunning design.',
+    year: 2021,
+    image_url: '/assets/Bugatti/bugatti3.jpg',
+    user_id: User.second.id,
+    price_per_day: 1500.00
+  },
+  {
+    model: 'Continental GT',
+    make: 'Bentley',
+    description: 'A grand tourer that combines performance and luxury in an elegant package.',
+    year: 2019,
+    image_url: '/assets/bently_continental/bently2.jpg',
+    user_id: User.third.id,
+    price_per_day: 300.00
+  },
+  {
+    model: '488 GTB',
+    make: 'Ferrari',
+    description: 'A stunning supercar with exhilarating performance and elegant design.',
+    year: 2019,
+    image_url: '/assets/ferrari488/ferrari1.jpg',
+    user_id: User.first.id,
+    price_per_day: 1200.00
+  },
+  {
+    model: 'Huracan',
+    make: 'Lamborghini',
+    description: 'A high-performance supercar known for its aggressive styling and speed.',
+    year: 2020,
+    image_url: 'lambo1/lambo1.jpg',
+    user_id: User.second.id,
+    price_per_day: 900.00
+  },
+  {
+    model: 'Phantom',
+    make: 'Rolls-Royce',
+    description: 'A luxury sedan offering unparalleled comfort, refinement, and craftsmanship.',
+    year: 2018,
+    image_url: '/assets/RR_Phantom/Rolls-Royce Phantom/phantom2.jpg',
+    user_id: User.third.id,
+    price_per_day: 1500.00
+  },
+  {
+    model: 'Panamera',
+    make: 'Porsche',
+    description: 'A luxury sports sedan that combines performance and practicality.',
+    year: 2021,
+    image_url: '/assets/Porche/Porsche Panamera/porche1.jpg',
+    user_id: User.first.id,
+    price_per_day: 400.00
+  },
+  {
+    model: 'DB11',
+    make: 'Aston Martin',
+    description: 'A grand tourer that epitomizes British luxury and performance.',
+    year: 2019,
+    image_url: 'aston/am2.jpg',
+    user_id: User.second.id,
+    price_per_day: 700.00
+  },
+  {
+    model: 'Ghibli',
+    make: 'Maserati',
+    description: 'A luxury sedan with a distinctive Italian style and powerful performance.',
+    year: 2020,
+    image_url: 'masserati/masserati1.jpg',
+    user_id: User.third.id,
+    price_per_day: 350.00
+  }
+])
