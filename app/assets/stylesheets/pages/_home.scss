@@ -22,23 +22,6 @@ header {
   color: #cfc6c6;
 }
 
-nav ul {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  justify-content: flex-end;
-}
-
-nav ul li {
-  margin-left: 2em;
-}
-
-nav ul li a {
-  text-decoration: none;
-  color: #454343;
-  font-weight: bold;
-}
-
 .hero-background {
   width: 100vw;
   margin-left: calc(-50vw + 50%);
@@ -86,10 +69,11 @@ nav ul li a {
   text-decoration: none;
   border-radius: 5px;
   font-size: 1.2em;
+  transition: 0.3s;
 }
 
 .red-button:hover {
-  background-color: #e04848;
+  background-color: #f47c2071;
 }
 
 main .container {
