@@ -1,4 +1,6 @@
-<h1>Cars Listing</h1>
+<div class="header-box">
+  <h1>Car Listings</h1>
+</div>
 
 <div class="car-container">
   <% @cars.each do |car| %>
@@ -6,11 +8,12 @@
       <h3><%= car.make %> <%= car.model %></h3>
       <%= link_to car_path(car) do %>
         <% if car.image_url.present? %>
-          <%= image_tag car.image_url, alt: "#{car.make} #{car.model}" %>
+          <%= image_tag car.image_url, alt: "#{car.make} #{car.model}", width: 200, height: 150 %>
         <% else %>
           <p>No image found</p>
         <% end %>
       <% end %>
+      <p class="car-price"> <%= number_to_currency(car.price_per_day, unit: "£", precision: 0) %></p>
     </div>
   <% end %>
 </div>
