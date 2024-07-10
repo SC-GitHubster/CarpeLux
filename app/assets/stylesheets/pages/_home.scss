@@ -6,20 +6,21 @@ body {
 }
 
 .container {
-  width: 80%;
+  width: 75%;
   margin: 0 auto;
 }
 
 header {
-  background-color: #fff;
-  padding: 1em 0;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #333;
+  padding: 1.5em 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .logo h1 {
   margin: 0;
-  font-size: 1.5em;
-  color: #cfc6c6;
+  font-size: 2em;
+  color: #fff;
+  font-family: 'Playfair Display', serif;
 }
 
 nav ul {
@@ -35,8 +36,10 @@ nav ul li {
 
 nav ul li a {
   text-decoration: none;
-  color: #454343;
+  color: #fff;
   font-weight: bold;
+  font-family: 'Merriweather', serif;
+  padding: 0.5em 1em;
 }
 
 .hero-background {
@@ -55,22 +58,23 @@ nav ul li a {
 
 .hero {
   background: rgba(0, 0, 0, 0.7);
-//   padding: 2em;
-//   border-radius: 10px;
+  // padding: 3em;
+  // border-radius: 10px;
 }
 
 .hero-content {
-  border: 2px solid rgb(254, 252, 252);
-  background: rgba(31, 30, 30, 0.5);
-  display: inline-block;
+  border: 2px solid #fff;
+  background: rgba(31, 30, 30, 0.7);
+  // display: inline-block;
   padding: 2em;
-  color: white;
+  color: #fff;
   text-align: center;
 }
 
 .hero h2 {
   font-size: 3em;
   margin: 0;
+  font-family: 'Playfair Display', serif;
 }
 
 .hero p {
@@ -81,15 +85,16 @@ nav ul li a {
 .red-button {
   display: inline-block;
   padding: 0.5em 2em;
-  background-color: #f47c20bb;
+  background-color: #b8891a;
   color: white;
   text-decoration: none;
   border-radius: 5px;
   font-size: 1.2em;
+  transition: background-color 0.3s ease;
 }
 
 .red-button:hover {
-  background-color: #e04848;
+  background-color: #a3751a;
 }
 
 main .container {
@@ -101,15 +106,16 @@ main .container {
   justify-content: space-between;
 }
 
+// this is the scss for the show page
 .car {
   background: white;
-  padding: 1em;
+  padding: 1.5em;
   border-radius: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   text-align: center;
   width: 30%;
 }
-
+// this one as well ---
 .car img {
   max-width: 100%;
   border-radius: 10px;
@@ -119,7 +125,7 @@ footer {
   background-color: #333;
   color: white;
   text-align: center;
-  padding: 1em 0;
+  padding: 1.5em 0;
   margin-top: 2em;
 }
 
@@ -129,15 +135,15 @@ footer {
   gap: 20px;
   justify-content: space-between;
 }
-
+// this one as well --
 .car {
   flex: 0 0 calc(33.333% - 20px);
   box-sizing: border-box;
-  border: 1px solid #ccc;
+  border: 1px solid #ddd;
   padding: 10px;
   background-color: #f9f9f9;
 }
-
+// and this one as well --
 .car img {
   max-width: 100%;
   height: auto;
@@ -145,6 +151,7 @@ footer {
 
 .car h2 {
   margin-top: 0;
+  font-family: 'Merriweather', serif;
 }
 
 .navbar {
@@ -170,6 +177,7 @@ footer {
   color: white;
   text-decoration: none;
   padding: 0.5em 1em;
+  font-family: 'Merriweather', serif;
 }
 
 .navbar h1 {
@@ -177,9 +185,10 @@ footer {
   font-size: 1.5em;
   font-weight: bold;
 }
-
+// this is for the buttons-navbar home cars and etc
 .navbar a:hover {
   background-color: #575757;
+  border-radius: 50px;
 }
 
 .nav-list {
