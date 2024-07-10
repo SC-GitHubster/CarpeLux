@@ -86,10 +86,11 @@ nav ul li a {
   text-decoration: none;
   border-radius: 5px;
   font-size: 1.2em;
+  transition: 0.3s;
 }
 
 .red-button:hover {
-  background-color: #e04848;
+  background-color: #f47c2085;
 }
 
 main .container {
