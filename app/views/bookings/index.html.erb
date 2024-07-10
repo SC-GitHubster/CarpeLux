@@ -3,9 +3,9 @@
 <ul>
   <% @bookings.each do |booking| %>
     <li>
-      Booking ID: <%= booking.id %> |
+      Booking ID: <%= booking %> |
       <%= link_to 'View', booking_path(booking) %> |
-      <%= link_to 'Edit', edit_booking_path(booking) %> |
+      <%# <%= link_to 'Edit', edit_booking_path(booking) %>
       <%= link_to 'Delete', booking_path(booking), method: :delete, data: { confirm: 'Are you sure?' } %>
     </li>
   <% end %>

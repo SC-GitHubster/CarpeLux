@@ -13,5 +13,14 @@
   <%= image_tag(@user.avatar.url) if @user.avatar? %>
 </p>
 
+<h2>Bookings</h2>
+<% if @user.bookings.any? %>
+  <ul>
+    <%= render @user.bookings %>
+  </ul>
+<% else %>
+  <p>No bookings available.</p>
+<% end %>
+
 <%= link_to 'Edit', edit_user_path(@user) %> |
 <%= link_to 'Back', root_path %>
