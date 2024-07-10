@@ -8,6 +8,7 @@ body {
 .container {
   width: 80%;
   margin: 0 auto;
+  text-align: center;
 }
 
 header {
@@ -51,6 +52,7 @@ nav ul li a {
   display: flex;
   align-items: center;
   justify-content: center;
+  border: 10px solid black
 }
 
 .hero {
@@ -60,11 +62,11 @@ nav ul li a {
 }
 
 .hero-content {
-  border: 2px solid rgb(254, 252, 252);
+  border: 2px solid #634832;
   background: rgba(31, 30, 30, 0.5);
   display: inline-block;
   padding: 2em;
-  color: white;
+  color: #ece0d1;
   text-align: center;
 }
 
@@ -114,7 +116,41 @@ main .container {
 .car img {
   max-width: 100%;
   border-radius: 10px;
+  border-radius: 10px
 }
+
+.icon-container {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  gap: 5px;
+}
+
+.icon-home {
+  background: white;
+  // padding: 1em;
+  border-radius: 10px;
+  text-align: center;
+  width: 30%;
+  background: transparent;
+}
+
+.icon-home img {
+  max-width: 100%;
+  border-radius: 10px;
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+  object-fit: contain;
+  border-radius: 10px
+}
+
+// .tesla-logo {
+//   width: 150px;
+//   height: 150px;
+// }
+
 
 html, body {
   height: 100%;
@@ -129,11 +165,12 @@ body {
 
 main {
   flex: 1;
+  background-color: #dbc1ac53;
 }
 
 
 footer {
-  background-color: #333;
+  background-color: #967259;
   color: white;
   text-align: center;
   padding: 1em 0;
@@ -180,20 +217,20 @@ footer ul li {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #333;
+  background-color: #967259;
   padding: 1em;
 }
 
-.logo {
-  display: flex;
-  align-items: center;
-}
+// .logo {
+//   display: flex;
+//   align-items: center;
+// }
 
-.logo-img {
-  max-height: 100px;
-  height: auto;
-  width: auto;
-}
+// .logo-img {
+//   max-height: 100px;
+//   height: auto;
+//   width: auto;
+// }
 
 .navbar a {
   color: white;
