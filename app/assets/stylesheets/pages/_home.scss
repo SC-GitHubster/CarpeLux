@@ -115,12 +115,40 @@ main .container {
   border-radius: 10px;
 }
 
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+
 footer {
   background-color: #333;
   color: white;
   text-align: center;
   padding: 1em 0;
-  margin-top: 2em;
+  width: 100%;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+footer ul li {
+  margin: 0 10px;
 }
 
 .car-container {
