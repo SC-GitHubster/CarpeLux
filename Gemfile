@@ -29,14 +29,16 @@ gem "jbuilder"
 # Use Redis adapter to run Action Cable in production
 # gem "redis", ">= 4.0.1"
 
-gem 'devise'
+gem "devise"
 
-gem 'cloudinary'
+gem "cloudinary"
 
-gem 'carrierwave', '~> 2.0'
+gem "carrierwave", "~> 2.0"
 gem "dotenv-rails"
 
-gem 'faker'
+gem "faker"
+
+gem "pg_search"
 
 # Use Kredis to get higher-level data types in Redis [https://github.com/rails/kredis]
 # gem "kredis"
