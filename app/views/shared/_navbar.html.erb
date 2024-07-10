@@ -5,9 +5,10 @@
           </div>
             <ul class="nav-list">
                 <li><%= link_to "Home", root_path %></li>
-                <li><%= link_to "Cars", cars_path%></li>
-                <li><%= link_to "Bookings", bookings_path%></li>
+                <li><%= link_to "Cars", cars_path %></li>
+                <li><%= link_to "Bookings", bookings_path %></li>
                 <li><%= link_to "Share your car", new_car_path %></li>
+                <li><%= link_to new_car_path do %><i class="fa-solid fa-user-tie profile-icon" aria-hidden="true"></i><% end %></li>
             </ul>
         </nav>
     </div>
