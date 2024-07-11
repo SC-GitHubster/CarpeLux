@@ -143,6 +143,23 @@ body {
   margin-top: 10px;
 }
 
+// car index page custom button styling
+.btn-new-car {
+  background-color: #b8891a;
+  color: #fefefd;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: inline-block;
+}
+
+// car index page custom button styling
+.btn-new-car:hover {
+  background-color: darken(#b8891a, 10%);
+  color: #fefefd;
+}
+
 // this is the scss for the show page
 .car {
   background: white;
