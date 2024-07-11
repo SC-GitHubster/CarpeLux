@@ -4,7 +4,7 @@ class BookingsController < ApplicationController
   before_action :set_car, only: [:new, :create]
 
   def index
-    @bookings = current_user.bookings
+    @bookings = current_user.bookings.order(start_date: :asc)
   end
 
   def show
