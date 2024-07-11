@@ -8,6 +8,7 @@ body {
 .container {
   width: 75%;
   margin: 0 auto;
+  text-align: center;
 }
 
 header {
@@ -54,6 +55,7 @@ nav ul li a {
   display: flex;
   align-items: center;
   justify-content: center;
+  border: 10px solid black
 }
 
 .hero {
@@ -63,11 +65,11 @@ nav ul li a {
 }
 
 .hero-content {
-  border: 2px solid #fff;
-  background: rgba(31, 30, 30, 0.7);
-  // display: inline-block;
+  border: 2px solid #634832;
+  background: rgba(31, 30, 30, 0.5);
+  display: inline-block;
   padding: 2em;
-  color: #fff;
+  color: #ece0d1;
   text-align: center;
 }
 
@@ -90,11 +92,11 @@ nav ul li a {
   text-decoration: none;
   border-radius: 5px;
   font-size: 1.2em;
-  transition: background-color 0.3s ease;
+  transition: 0.3s;
 }
 
 .red-button:hover {
-  background-color: #a3751a;
+  background-color: #f47c2085;
 }
 
 main .container {
@@ -104,6 +106,39 @@ main .container {
 .car-list {
   display: flex;
   justify-content: space-between;
+}
+
+// car index page
+.car-index-image {
+  width: 200px;
+  height: 150px;
+  object-fit: cover;
+}
+
+// car index page
+body {
+  background-color: #b75f20;
+}
+
+// car index page
+.header-box {
+  background-color: #2a282c;
+  padding: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+// car index page
+.header-box h1 {
+  color: #fdfdfd;
+}
+
+// car index page
+.car-price {
+  font-size: 20px;
+  color: #2a282c;
+  margin-top: 10px;
 }
 
 // this is the scss for the show page
@@ -117,16 +152,81 @@ main .container {
 }
 // this one as well ---
 .car img {
-  max-width: 100%;
+  // max-width: 100%;
+  width: 200;
+  height: 150;
   border-radius: 10px;
+  border-radius: 10px
 }
 
+.icon-container {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  gap: 5px;
+}
+
+.icon-home {
+  background: white;
+  // padding: 1em;
+  border-radius: 10px;
+  text-align: center;
+  width: 30%;
+  background: transparent;
+}
+
+.icon-home img {
+  max-width: 100%;
+  border-radius: 10px;
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+  object-fit: contain;
+  border-radius: 10px
+}
+
+// .tesla-logo {
+//   width: 150px;
+//   height: 150px;
+// }
+
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+  background-color: #dbc1ac53;
+}
+
+
 footer {
-  background-color: #333;
+  background-color: #967259;
   color: white;
   text-align: center;
-  padding: 1.5em 0;
-  margin-top: 2em;
+  padding: 1em 0;
+  width: 100%;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+footer ul li {
+  margin: 0 10px;
 }
 
 .car-container {
@@ -143,11 +243,6 @@ footer {
   padding: 10px;
   background-color: #f9f9f9;
 }
-// and this one as well --
-.car img {
-  max-width: 100%;
-  height: auto;
-}
 
 .car h2 {
   margin-top: 0;
@@ -158,20 +253,20 @@ footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #333;
+  background-color: #967259;
   padding: 1em;
 }
 
-.logo {
-  display: flex;
-  align-items: center;
-}
+// .logo {
+//   display: flex;
+//   align-items: center;
+// }
 
-.logo-img {
-  max-height: 100px;
-  height: auto;
-  width: auto;
-}
+// .logo-img {
+//   max-height: 100px;
+//   height: auto;
+//   width: auto;
+// }
 
 .navbar a {
   color: white;
