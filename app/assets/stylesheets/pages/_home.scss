@@ -319,3 +319,20 @@ footer ul li {
 .nav-list li {
   margin-right: 10px;
 }
+
+.btn-primary {
+  display: inline-block;
+  padding: 0.03em 2.5em;
+  background-color: #b8891a;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1.2em;
+  font-family: 'Merriweather', serif;
+  transition: 0.3s;
+  border: 2px solid transparent;
+}
+.btn-primary:hover {
+  background-color: #967259;
+  border-color: #b8891a;
+}
