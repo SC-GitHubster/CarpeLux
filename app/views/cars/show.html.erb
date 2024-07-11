@@ -2,7 +2,7 @@
 
 <p><strong>Year:</strong> <%= @car.year %></p>
 <p><strong>Description:</strong> <%= @car.description %></p>
-<div class="car">
+<div id="show-page-car-img">
 <%= image_tag(@car.image_url) if @car.image_url.present? %>
 </div>
 
