@@ -105,7 +105,9 @@ main .container {
 
 .car-list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
+  gap: 20px; /* Adjust the gap between the cars */
 }
 
 // car index page
@@ -144,20 +146,25 @@ body {
 // this is the scss for the show page
 .car {
   background: white;
-  padding: 1.5em;
+  padding: 1em;
   border-radius: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   text-align: center;
-  width: 30%;
+  width: calc(33.333% - 20px); /* 3 items per row with space between */
+  box-sizing: border-box;
 }
-// this one as well ---
+
 .car img {
   // max-width: 100%;
   width: 200;
   height: 150;
   border-radius: 10px;
-  border-radius: 10px
 }
+
+.car h2, .car p {
+  margin: 10px 0;
+}
+
 
 .icon-container {
   display: flex;
