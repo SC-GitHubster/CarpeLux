@@ -143,6 +143,23 @@ body {
   margin-top: 10px;
 }
 
+// car index page custom button styling
+.btn-new-car {
+  background-color: #b8891a;
+  color: #fefefd;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: inline-block;
+}
+
+// car index page custom button styling
+.btn-new-car:hover {
+  background-color: darken(#b8891a, 10%);
+  color: #fefefd;
+}
+
 // this is the scss for the show page
 .car {
   background: white;
@@ -303,10 +320,20 @@ footer ul li {
   margin-right: 10px;
 }
 
+.btn-primary {
+  display: inline-block;
+  padding: 0.03em 2.5em;
+  background-color: #b8891a;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1.2em;
+  font-family: 'Merriweather', serif;
+  transition: 0.3s;
+  border: 2px solid transparent;
+}
+.btn-primary:hover {
+  background-color: #967259;
+  border-color: #b8891a;
 
-#show-page-car-img  img{
-
-  width: 500px;
-  // height: 500px;
-  border-radius: 10px;
 }
