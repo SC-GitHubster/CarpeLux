@@ -27,3 +27,14 @@ nav ul li a {
   color: #454343;
   font-weight: bold;
 }
+
+.profile-icon {
+  font-size: 24px; /* Increase the size of the icon */
+  color: white; /* Change the color of the icon */
+  transition: color 0.3s, transform 0.3s; /* Add transition effects */
+}
+
+.profile-icon:hover {
+  color: white; /* Change the color on hover */
+  transform: scale(1.1); /* Slightly enlarge the icon on hover */
+}

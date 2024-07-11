@@ -2,6 +2,11 @@
   <h1>Car Listings</h1>
 </div>
 
+<%= form_tag(cars_path, method: :get, class: "search-form") do %>
+  <%= text_field_tag :query, params[:query], placeholder: "Search by make or model..." %>
+  <%= submit_tag "Search", class: "btn btn-primary" %>
+<% end %>
+
 <div class="car-container">
   <% @cars.each do |car| %>
     <div class="car">
