@@ -65,11 +65,11 @@ nav ul li a {
 }
 
 .hero-content {
-  border: 2px solid #634832;
+  border: 2px solid #ffffff43;
   background: rgba(31, 30, 30, 0.5);
   display: inline-block;
   padding: 2em;
-  color: #ece0d1;
+  color: #ffffff;
   text-align: center;
 }
 
@@ -87,7 +87,7 @@ nav ul li a {
 .red-button {
   display: inline-block;
   padding: 0.5em 2em;
-  background-color: #b8891a;
+  background-color: #d66d1d;
   color: white;
   text-decoration: none;
   border-radius: 5px;
@@ -107,22 +107,19 @@ main .container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  gap: 20px; /* Adjust the gap between the cars */
+  gap: 20px;
 }
 
-// car index page
 .car-index-image {
   width: 200px;
   height: 150px;
   object-fit: cover;
 }
 
-// car index page
 body {
-  background-color: #b75f20;
+  background-color: #c7c7c7;
 }
 
-// car index page
 .header-box {
   background-color: #2a282c;
   padding: 20px;
@@ -131,21 +128,19 @@ body {
   border-radius: 10px;
 }
 
-// car index page
 .header-box h1 {
   color: #fdfdfd;
 }
 
-// car index page
 .car-price {
   font-size: 20px;
   color: #2a282c;
   margin-top: 10px;
 }
 
-// car index page custom button styling
+
 .btn-new-car {
-  background-color: #b8891a;
+  background-color: #d66d1d;
   color: #fefefd;
   border: none;
   padding: 10px 20px;
@@ -154,11 +149,15 @@ body {
   display: inline-block;
 }
 
-// car index page custom button styling
+
 .btn-new-car:hover {
-  background-color: darken(#b8891a, 10%);
+  background-color: darken(#d66d1d, 10%);
   color: #fefefd;
 }
+
+
+
+
 
 // this is the scss for the show page
 .car {
@@ -167,7 +166,7 @@ body {
   border-radius: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   text-align: center;
-  width: calc(33.333% - 20px); /* 3 items per row with space between */
+  width: calc(33.333% - 20px);
   box-sizing: border-box;
 }
 
@@ -229,12 +228,12 @@ body {
 
 main {
   flex: 1;
-  background-color: #dbc1ac53;
+  background-color: #c7c7c7;
 }
 
 
 footer {
-  background-color: #967259;
+  background-color: #535353;
   color: white;
   text-align: center;
   padding: 1em 0;
@@ -277,7 +276,7 @@ footer ul li {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #967259;
+  background-color: #535353;
   padding: 1em;
 }
 
@@ -304,6 +303,9 @@ footer ul li {
   font-size: 1.5em;
   font-weight: bold;
 }
+
+
+
 // this is for the buttons-navbar home cars and etc
 .navbar a:hover {
   background-color: #575757;
