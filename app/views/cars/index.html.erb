@@ -3,7 +3,7 @@
 </div>
 
 <%= form_tag(cars_path, method: :get, class: "search-form") do %>
-  <%= text_field_tag :query, params[:query], placeholder: "Search by make or model..." %>
+  <%= text_field_tag :query, params[:query], placeholder: "Search ...", class: "search-btn"%>
   <%= submit_tag "Search", class: "btn btn-primary" %>
 <% end %>
 
