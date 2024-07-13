@@ -340,7 +340,7 @@ footer ul li {
   border-color: #b8891a;
 }
 
-#show-page-car-img.car-image {
+#show-page-car-img.car-image1 {
   float: left;
   margin-right: 20px;
   overflow: hidden;
@@ -383,12 +383,14 @@ footer ul li {
 .hover-text {
   background-color: #333;
 }
+
 .booking-container {
   background-color: #d66d1d;
   padding: 10px;
   margin-bottom: 10px;
 }
 
+// this is making my images smaller
 .car-image {
   width: 150px;
   height: auto;
