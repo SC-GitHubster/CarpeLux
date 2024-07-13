@@ -13,7 +13,7 @@
       <h3><%= car.make %> <%= car.model %></h3>
       <%= link_to car_path(car) do %>
         <% if car.image_url.present? %>
-          <%= image_tag car.image_url, alt: "#{car.make} #{car.model}", class: "car-image" %>
+          <%= image_tag car.image_url, alt: "#{car.make} #{car.model}" %>
         <% else %>
           <p>No image found</p>
         <% end %>
