@@ -386,7 +386,7 @@ footer ul li {
 }
 
 .booking-container {
-  background-color: #d66d1d;
+  background-color: #ffffff;
   padding: 10px;
   margin-bottom: 10px;
 }
@@ -396,6 +396,7 @@ footer ul li {
   width: 300px;
   height: auto;
   margin-right: 20px;
+  padding: 20px;
 }
 
 .booking-details {
@@ -406,8 +407,9 @@ footer ul li {
 }
 
 .booking-elements {
-  background-color: green;
+  background-color: rgb(255, 255, 255);
   flex: 1;
+  margin-top: 10px;
   margin-bottom: 10px;
 }
 
@@ -421,6 +423,12 @@ footer ul li {
   padding: 5px;
   color: white;
 }
+
+.td-container {
+  padding: 50px;
+  margin: auto;
+}
+
 // new car form
 .form-control {
   max-width: 500px;
