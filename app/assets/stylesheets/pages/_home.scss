@@ -6,7 +6,7 @@ body {
 }
 
 .container {
-  width: 75%;
+  width: 100%;
   margin: 0 auto;
   text-align: center;
 }
@@ -122,23 +122,23 @@ body {
 }
 
 .header-box {
-  background-color: #2a282c;
+  background-color: #2A282C;
   padding: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 0px;
+  margin-top: 10px;
   text-align: center;
   border-radius: 10px;
 }
 
 .header-box h1 {
-  color: #fdfdfd;
+  color: white;
 }
 
 .car-price {
   font-size: 20px;
   color: #2a282c;
-  margin-top: 10px;
+  margin-top: 20px;
 }
-
 
 .btn-new-car {
   background-color: #d66d1d;
@@ -150,15 +150,10 @@ body {
   display: inline-block;
 }
 
-
 .btn-new-car:hover {
   background-color: darken(#d66d1d, 10%);
   color: #fefefd;
 }
-
-
-
-
 
 // this is the scss for the show page
 .car {
@@ -169,19 +164,24 @@ body {
   text-align: center;
   width: calc(33.333% - 20px);
   box-sizing: border-box;
+  height: 300px; /* Add fixed height */
+  display: flex;
+  flex-direction: column; /* Ensure proper alignment */
+  justify-content: space-between; /* Space out elements inside */
 }
 
 .car img {
-  // max-width: 100%;
-  width: 200;
-  height: 150;
+  width: 100%;
+  height: auto;
+  max-width: 200px;
+  max-height: 150px;
+  object-fit: cover;
   border-radius: 10px;
 }
 
 .car h2, .car p {
   margin: 10px 0;
 }
-
 
 .icon-container {
   display: flex;
@@ -193,7 +193,6 @@ body {
 
 .icon-home {
   background: white;
-  // padding: 1em;
   border-radius: 10px;
   text-align: center;
   width: 30%;
@@ -215,7 +214,6 @@ body {
 //   height: 150px;
 // }
 
-
 html, body {
   height: 100%;
   margin: 0;
@@ -231,7 +229,6 @@ main {
   flex: 1;
   background-color: #c7c7c7;
 }
-
 
 footer {
   background-color: #535353;
@@ -259,6 +256,7 @@ footer ul li {
   gap: 20px;
   justify-content: space-between;
 }
+
 // this one as well --
 .car {
   flex: 0 0 calc(33.333% - 20px);
@@ -305,8 +303,6 @@ footer ul li {
   font-weight: bold;
 }
 
-
-
 // this is for the buttons-navbar home cars and etc
 .navbar a:hover {
   background-color: #575757;
@@ -326,7 +322,7 @@ footer ul li {
 .btn-primary {
   display: inline-block;
   padding: 0.03em 2.5em;
-  background-color: #b8891a;
+  background-color: #d66d1d;
   color: white;
   text-decoration: none;
   border-radius: 5px;
@@ -334,9 +330,11 @@ footer ul li {
   font-family: 'Merriweather', serif;
   transition: 0.3s;
   border: 2px solid transparent;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
+
 .btn-primary:hover {
   background-color: #967259;
   border-color: #b8891a;
-
 }
