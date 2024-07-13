@@ -273,6 +273,8 @@ footer ul li {
   border: 1px solid #ddd;
   padding: 10px;
   background-color: #f9f9f9;
+  border: 0.5px solid #000000;
+
 }
 
 .car h2 {
@@ -393,16 +395,21 @@ footer ul li {
 
 .booking-container {
   background-color: #ffffff;
-  padding: 10px;
   margin-bottom: 10px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border: 0.5px solid #000000;
+  // margin: 100px;
 }
 
-// this is making my images smaller
+
 .car-image {
   width: 300px;
   height: auto;
   margin-right: 20px;
   padding: 20px;
+  // border-radius: 10px;
+  // box-shadow: 5px 5px 1px rgba(0, 0, 0, 0.5);
 }
 
 .booking-details {
@@ -417,6 +424,7 @@ footer ul li {
   flex: 1;
   margin-top: 10px;
   margin-bottom: 10px;
+
 }
 
 .elements-parent {
@@ -431,8 +439,8 @@ footer ul li {
 }
 
 .td-container {
-  padding: 50px;
-  margin: auto;
+
+  margin: 100px;
 }
 
 // new car form
@@ -467,6 +475,13 @@ footer ul li {
   color: #d56d1e;
   font-size: 30px;
 }
+
+#booking-h2 {
+  font-family: "Merriweather";
+}
+
+#booking1-h2 {
+  font-family: "Merriweather";
 
 // .search-form {
   // }

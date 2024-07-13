@@ -3,19 +3,19 @@
 <div>
   <% @bookings.each do |booking| %>
 
-      <table class="w-100 booking-container">
+      <table class="w-50 mx-auto booking-container">
         <tr>
           <td class="td-container">
             <%= image_tag booking.car.image_url, class: "car-image"  %>
           </td>
           <div class="elements-parent">
               <td class="td-container">
-                <p class="booking-elements"><strong>Start Date:</strong><%= booking.start_date %></p>
-                <p class="booking-elements"><strong>End Date:</strong> <%= booking.end_date %></p>
 
+                <h2 class="booking-elements" id="booking-h2"><strong><%= booking.car.make %></strong></h2>
+                <h2 class="booking-elements" id="booking1-h2"><strong><%= booking.car.model %></strong></h2>
+                <p class="booking-elements"><strong>Start Date: </strong><%= booking.start_date %></p>
+                <p class="booking-elements"><strong>End Date: </strong><%= booking.end_date %></p>
 
-                <p class="booking-elements"><strong>Make:</strong><%= booking.car.make %></p>
-                <p class="booking-elements"><strong>Model:</strong><%= booking.car.model %></p>
               </td>
           </div>
         </tr>
