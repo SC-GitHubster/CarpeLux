@@ -17,6 +17,10 @@ header {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+h1 {
+  font-family: 'Merriweather', serif;
+}
+
 .logo h1 {
   margin: 0;
   font-size: 2em;
@@ -124,6 +128,7 @@ body {
 .header-box {
   background-color: #2a282c;
   padding: 20px;
+  margin-top: 20px;
   margin-bottom: 20px;
   text-align: center;
   border-radius: 10px;
@@ -375,4 +380,71 @@ footer ul li {
 
 .hover-text {
   background-color: #333;
+
+.booking-container {
+  background-color: #d66d1d;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.car-image {
+  width: 150px;
+  height: auto;
+  margin-right: 20px;
+}
+
+.booking-details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+.booking-elements {
+  background-color: green;
+  flex: 1;
+  margin-bottom: 10px;
+}
+
+.elements-parent {
+  display: flex;
+}
+
+.booking-elements p {
+  flex-basis: 100%;
+  margin: 0;
+  padding: 5px;
+  color: white;
+
+// new car form
+.form-control {
+  max-width: 500px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+// new car form
+.form-group {
+  margin-bottom: 15px;
+}
+
+// new car form
+.actions {
+  text-align: center;
+}
+
+// new car form
+.form-container {
+  background-color: #e0e0e0;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.back-arrow {
+  color: #d56d1e;
+  font-size: 30px;
 }
