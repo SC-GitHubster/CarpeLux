@@ -35,7 +35,7 @@ class BookingsController < ApplicationController
 
   private
 
-  # Use callbacks to share common setup or constraints between actions.
+
   def set_booking
     @booking = current_user.bookings.find(params[:id])
   end
@@ -44,7 +44,6 @@ class BookingsController < ApplicationController
     @car = Car.find(params[:car_id])
   end
 
-  # Only allow a list of trusted parameters through.
   def booking_params
     params.require(:booking).permit(:start_date, :end_date)
   end

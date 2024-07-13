@@ -346,6 +346,41 @@ footer ul li {
 
 }
 
+.booking-container {
+  background-color: #d66d1d;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.car-image {
+  width: 150px;
+  height: auto;
+  margin-right: 20px;
+}
+
+.booking-details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+.booking-elements {
+  background-color: green;
+  flex: 1;
+  margin-bottom: 10px;
+}
+
+.elements-parent {
+  display: flex;
+}
+
+.booking-elements p {
+  flex-basis: 100%;
+  margin: 0;
+  padding: 5px;
+  color: white;
+
 // new car form
 .form-control {
   max-width: 500px;
