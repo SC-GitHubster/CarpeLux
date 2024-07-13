@@ -3,7 +3,7 @@ class Car < ApplicationRecord
   has_many :bookings
   has_one_attached :image
 
-  validates :make, :model, :year, :price, :description, presence: true
+  validates :make, :model, :year, :price_per_day, :description, presence: true
 
   include PgSearch::Model
 

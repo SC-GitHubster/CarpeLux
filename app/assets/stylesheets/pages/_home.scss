@@ -17,6 +17,10 @@ header {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+h1 {
+  font-family: 'Merriweather', serif;
+}
+
 .logo h1 {
   margin: 0;
   font-size: 2em;
@@ -155,7 +159,6 @@ body {
   color: #fefefd;
 }
 
-// this is the scss for the show page
 .car {
   background: white;
   padding: 1em;
@@ -257,7 +260,6 @@ footer ul li {
   justify-content: space-between;
 }
 
-// this one as well --
 .car {
   flex: 0 0 calc(33.333% - 20px);
   box-sizing: border-box;
@@ -303,7 +305,6 @@ footer ul li {
   font-weight: bold;
 }
 
-// this is for the buttons-navbar home cars and etc
 .navbar a:hover {
   background-color: #575757;
   border-radius: 50px;
@@ -337,4 +338,115 @@ footer ul li {
 .btn-primary:hover {
   background-color: #967259;
   border-color: #b8891a;
+}
+
+#show-page-car-img.car-image {
+  float: left;
+  margin-right: 20px;
+  overflow: hidden;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  img {
+    max-width: 400px;
+    height: auto;
+    margin: auto 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+}
+.car-actions {
+  clear: both;
+  margin-top: 20px;
+  .btn {
+    margin-right: 10px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+  .btn-book, .btn-back, .btn-edit {
+    background-color: #d66d1d;
+    border: none;
+    color: #fefefd;
+  }
+  .btn:hover {
+    opacity: 0.8;
+    background-color: #b78c6d;
+    border: none;
+  }
+}
+.car-show {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.hover-text {
+  background-color: #333;
+
+.booking-container {
+  background-color: #d66d1d;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.car-image {
+  width: 150px;
+  height: auto;
+  margin-right: 20px;
+}
+
+.booking-details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+.booking-elements {
+  background-color: green;
+  flex: 1;
+  margin-bottom: 10px;
+}
+
+.elements-parent {
+  display: flex;
+}
+
+.booking-elements p {
+  flex-basis: 100%;
+  margin: 0;
+  padding: 5px;
+  color: white;
+
+// new car form
+.form-control {
+  max-width: 500px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+// new car form
+.form-group {
+  margin-bottom: 15px;
+}
+
+// new car form
+.actions {
+  text-align: center;
+}
+
+// new car form
+.form-container {
+  background-color: #e0e0e0;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.back-arrow {
+  color: #d56d1e;
+  font-size: 30px;
 }

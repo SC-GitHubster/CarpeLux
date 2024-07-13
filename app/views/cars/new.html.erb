@@ -1,36 +1,43 @@
-<h1>New Car</h1>
+<div class="header-box">
+  <h1>New Car</h1>
+</div>
 
+
+<div class="form-container">
 <%= form_with(model: @car, local: true) do |form| %>
 
-    <div class="field">
-      <%= form.label :make %>
-      <%= form.text_field :make %>
+    <div class="form-group mb-3">
+      <%# <%= form.label :make %>
+      <%= form.text_field :make, placeholder: "make", class: "form-control" %>
     </div>
 
-    <div class="field">
-      <%= form.label :model %>
-      <%= form.text_field :model %>
+    <div class="form-group mb-3">
+      <%# <%= form.label :model %>
+      <%= form.text_field :model, placeholder: "model", class: "form-control"  %>
     </div>
 
-    <div class="field">
-      <%= form.label :year %>
-      <%= form.number_field :year %>
+    <div class="form-group mb-3">
+      <%# <%= form.label :year %>
+      <%= form.number_field :year, placeholder: "year", class: "form-control" %>
     </div>
 
-    <div class="field">
-      <%= form.label :description %>
-      <%= form.text_area :description %>
+    <div class="form-group mb-3">
+      <%# <%= form.label :description %>
+      <%= form.text_area :description, placeholder: "description", class: "form-control" %>
     </div>
 
-    <div class="field">
-      <%= form.label :image_url %>
-      <%= form.text_field :image_url %>
+    <div class="form-group mb-3">
+      <%# <%= form.label :image_url %>
+      <%= form.text_field :image_url, placeholder: "image URL", class: "form-control" %>
     </div>
+</div>
 
     <div class="actions">
-      <%= form.submit "Create Car" %>
+      <%= form.submit "Create Car", class: 'btn btn-new-car' %>
     </div>
-    
+
 <% end %>
 
-<%= link_to 'Back', cars_path %>
+  <%= link_to cars_path do %>
+    <i class="fa-solid fa-circle-arrow-left back-arrow"></i>
+  <% end %>
