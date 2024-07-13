@@ -126,7 +126,7 @@ body {
 }
 
 .header-box {
-  background-color: #2A282C;
+  background: linear-gradient(to right, #868f96 0%, #596164 100%);;
   padding: 20px;
   margin-bottom: 20px;
   margin-top: 10px;
@@ -176,10 +176,11 @@ body {
 .car img {
   width: 100%;
   height: auto;
-  max-width: 200px;
+  max-width: 280px;
   max-height: 150px;
   object-fit: cover;
   border-radius: 10px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
 }
 
 .car h2, .car p {
@@ -392,7 +393,7 @@ footer ul li {
 
 // this is making my images smaller
 .car-image {
-  width: 150px;
+  width: 300px;
   height: auto;
   margin-right: 20px;
 }
